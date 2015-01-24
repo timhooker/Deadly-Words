@@ -16,10 +16,38 @@
     <div class="dashed-word-container">
       <h3 class="dashed-word">_ _ _</h3>
     </div>
-      <input type="text" class="user-input" maxlength="1" onchange="setGuess(this.value)"><button onclick="checkGuess()">GUESS</button>
+      <input type="text" class="user-input" minLength="1" maxlength="1" onchange="setGuess(this.value)"><button onclick="checkGuess()">GUESS</button>
     <br>
 
     <h4 class="guess-result"></h4>
+
+  </div>
+  <div class="hang-em-up">
+    <img class="rope hangman" src="img/rope.png" alt="" />
+    <div class="hangman-leg-left hangman-legs hangman shake">
+
+    </div>
+    <div class="hangman-leg-right hangman-legs hangman shake">
+
+    </div>
+
+    <div class="hangman-body hangman shake">
+    </div>
+    <div class="hangman-head hangman shake">
+      <div class="hangman-face">
+        <div class="hangman-eyes">
+          <div class="hangman-left-eye"></div>
+          <div class="hangman-right-eye"></div>
+        </div>
+        <div class="hangman-mouth"></div>
+      </div>
+    </div>
+    <div class="hangman-arm-left hangman hangman-arms shake"></div>
+    <div class="hangman-arm-right hangman hangman-arms shake"></div>
+    <img class="bottom-board hangman" src="img/bottom-board.png" alt="" />
+    <img class="tall-board hangman" src="img/tall-board.png" alt="" />
+    <img class="top-board hangman" src="img/top-board.png" alt="" />
+    <img class="neck-rope hangman" src="img/neck-rope.png" alt="" />
 
   </div>
 

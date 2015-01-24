@@ -1,0 +1,146 @@
+.hang-em-up {
+  height: 573px;
+  width: 406px;
+  img {
+    position: absolute;
+    repeat: none;
+  }
+}
+
+.hangman-head {
+  background: url('../img/hangman-head.png');
+  top: 50px;
+  left: 80px;
+
+}
+
+.hangman-left-eye,
+.hangman-right-eye {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-color: $steel;
+  border-radius: 50%;
+
+}
+.hangman-eyes {
+  top: 90px;
+  left: 58px;
+  position: absolute;
+  animation: eyes-blinking 3s infinite;
+}
+
+.hangman-left-eye {
+  // top: 92px;
+  left: 0px;
+
+}
+.hangman-right-eye {
+  // top: 90px;
+  left: 25px;
+}
+
+.hangman-mouth {
+  position: absolute;
+  top: 140px;
+  left: 55px;
+  content: " ";
+  height: 40px;
+  width: 40px;
+  background-color: $salmon;
+  border-radius: 50%;
+  animation: mouth-moving 3s infinite;
+}
+
+.hangman-dead {
+  background: url('../img/hangman-dead.png');
+}
+.hangman-head,
+.hangmen-dead {
+  height: 202px;
+  width: 134px;
+  background-size: 100%, 100%;
+}
+
+
+.hangman-body {
+  width: 142px;
+  height: 156px;
+  background: url('../img/hangman-body.png');
+  background-size: 100%, 100%;
+  display: inline-block;
+  top: 240px;
+  left: 76px;
+}
+
+.hangman-arm-left,
+.hangman-arm-right {
+  top: 240px;
+  width: 52px;
+  height: 166px;
+  background: url('../img/hangman-arm.png');
+  background-size: 100%, 100%;
+  display: inline-block;
+  repeat: none;
+}
+.hangman-arm-left {
+  left: 60px;
+}
+.hangman-arm-right {
+  left: 177px;
+}
+
+.hangman-leg-left,
+.hangman-leg-right {
+  width: 59px;
+  height: 209px;
+  background: url('../img/hangman-leg.png');
+  background-size: 100%, 100%;
+  display: inline-block;
+  top: 300px;
+}
+.hangman-leg-left {
+  left: 85px;
+}
+.hangman-leg-right {
+  left: 150px;
+}
+
+.bottom-board {
+  width: 406px;
+  height: 30px;
+  right: 0;
+  bottom: 0;
+
+}
+.tall-board {
+  height: 573px;
+  width: 23px;
+  right: 0;
+  top: 0;
+}
+.top-board {
+  width: 280px;
+  height: 16px;
+  right: 0;
+  top: 0;
+
+}
+.rope {
+  height: 207px;
+  width: 30px;
+  top: 0;
+  left: 120px;
+}
+.neck-rope {
+  width: 86px;
+  height: 29px;
+  left: 105px;
+  top: 230px;
+}
+
+.hangman {
+  position: absolute;
+  display: none;
+}

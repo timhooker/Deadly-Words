@@ -1,40 +1,36 @@
+* {
+  box-sizing: border-box;
+}
 .deadman-page {
   text-transform: uppercase;
   background-color: #4c4c4e;
   color: #fff;
 }
 
-.deadman-content {
-  width: 60%;
-  margin: 15% auto;
+.deadman-content,
+.hang-em-up {
+  margin: 10em 0 0 0;
+  width: 49%;
   text-align: center;
+  display:inline-block;
+  vertical-align: top;
 }
+.hang-em-up {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height:
+  img {
+    height: auto;
+  }
+}
+
+
+
 .deadman-page h1 {
   font-weight: 400;
 }
 
-@keyframes moveit {
-  from {
-    opacity: 0;
-
-  }
-
-  to {
-    opacity: 1;
-
-  }
-}
-
-@-webkit-keyframes moveit {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: rotate(1turn);
-  }
-}
 
 .guess-result {
   padding: 2em;
@@ -55,7 +51,7 @@ input {
 }
 
 button {
-  background-color: deeppink;
+  background-color: $red;
   border: none;
   color: #fff;
   padding: 1em;

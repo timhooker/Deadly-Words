@@ -1,0 +1,129 @@
+//  A nice little area for our Animations.
+
+// Guess Result Animation for the Text on intial load
+
+@keyframes moveit {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}
+
+@-webkit-keyframes moveit {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(1turn);
+  }
+}
+
+// Hangman Animations
+
+// Eyes blinking and looking at Guess Answers
+
+@keyframes eyes-blinking {
+  0% {
+
+  }
+
+  50% {
+    transform: scaleY(1) translate(0, 0);
+  }
+  51% {
+    transform: translate(0px, 10px) scaleY(.1);
+  }
+  52% {
+    transform: scaleY(1) translate(0, 0);
+  }
+  61% {
+    transform: scaleY(1) translate(0, 0);
+  }
+  62% {
+    transform: translate(0px, 10px) scaleY(.1);
+  }
+  63% {
+    transform: scaleY(1) translate(0, 0);
+  }
+  75% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(-20px);
+  }
+  90% {
+    transform: translate(-20px);
+  }
+  95% {
+    transform: translate(0px, 0px);
+  }
+  95% {
+    transform: scaleY(1);
+    }
+  96% {
+    transform: translate(0px, 10px) scaleY(.1);
+  }
+  99% {
+    transform: translate(0px, 10px) scaleY(.1);
+  }
+  100% {
+    transform: scaleY(1) translate(0, 0);
+  }
+
+}
+
+// Mouth moving and changing shape in sync with eye movement
+
+@keyframes mouth-moving {
+  0% {
+
+  }
+  75% {
+    transform: translate(0px, 0px);
+    border-radius: 50%;
+  }
+  80% {
+    transform: translate(-10px);
+    border-top-right-radius: 100px;
+  }
+  90% {
+    transform: translate(-10px);
+    border-top-right-radius: 100px;
+
+  }
+  95% {
+    transform: translate(0px, 0px);
+    border-radius: 50%;
+
+  }
+  100% {
+
+  }
+}
+
+// Animation for hangman when he's gonna die and he knows it
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+.shake-it {
+  animation: shake .8s infinite;
+}
